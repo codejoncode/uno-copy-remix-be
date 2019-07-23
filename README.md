@@ -5,3 +5,5 @@ The purpose of this server will be to connect players to a multiplayer game appl
 The game can feature an unlimited players maybe i'll cap it off some where but the data base will authorize users via Auth 0. I want to use google and maybe facebook too. 
 
 Login the user in and keep track if they lose connection for a second or maybe accidentally close browser I want them to be able to come back into it. mainly the server will serve the purpose of allowing everyone to see the decesions the user made. 
+
+<iframe width="560" height="315" src='https://dbdiagram.io/embed/5d2ddc93ced98361d6dcb60a'> </iframe> 
