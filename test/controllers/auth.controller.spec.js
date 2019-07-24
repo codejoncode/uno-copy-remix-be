@@ -14,13 +14,13 @@ describe('AuthController', () => {
     //async tests  pass in done  and when done call done. 
     describe('isAuthorizedAsync', () => {
         it('Should return false if not authorized', (done) => {
+            //this.timeout(2500);//changes the functions timeout. if using functions instead of arrows functions
+            //if using arrow functions you cannot use the this keyword in the same scope. 
             authController.isAuthorizedAsync(['user'], 'admin',  (isAuth) => {
                 assert.equal(false, isAuth);
                 done(); 
             });
         })
-
-        
     })
 
 });
