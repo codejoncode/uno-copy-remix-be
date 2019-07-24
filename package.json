@@ -9,5 +9,8 @@
     "path": "^0.12.7",
     "socket.io": "^2.2.0",
     "uuid": "^3.3.2"
+  },
+  "scripts": {
+    "test": "mocha './test/**/*.spec.js'"
   }
 }
