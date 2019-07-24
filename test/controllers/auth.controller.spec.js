@@ -11,4 +11,16 @@ describe('AuthController', () => {
             assert.equal(true, authController.isAuthorized(['user', 'admin'], 'admin'));
         })
     })
+    //async tests  pass in done  and when done call done. 
+    describe('isAuthorizedAsync', () => {
+        it('Should return false if not authorized', (done) => {
+            authController.isAuthorizedAsync(['user'], 'admin',  (isAuth) => {
+                assert.equal(false, isAuth);
+                done(); 
+            });
+        })
+
+        
+    })
+
 });
